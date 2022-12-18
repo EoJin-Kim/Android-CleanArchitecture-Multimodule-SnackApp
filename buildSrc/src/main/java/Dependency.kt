@@ -1,6 +1,8 @@
+import Versions.ANDROIDX_ACTIVITY_KTX
 import Versions.ANDROIDX_COMPAT
 import Versions.ANDROIDX_CONSTRAINT_LAYOUT_VERSION
 import Versions.ANDROIDX_CORE_KTX_VERSION
+import Versions.ANDROIDX_FRAGMENT_KTX
 import Versions.DAGGER_VERSION
 import Versions.EXPRESSO_CORE
 import Versions.EXT_JUNIT_VERSION
@@ -8,6 +10,7 @@ import Versions.GOOGLE_MATERIAL_VERSION
 import Versions.HILT_COMPILER_VERSION
 import Versions.JAVAX_INJECT_VERSION
 import Versions.JUNIT_VERSION
+import Versions.LIVECYCLE_VERSION
 
 //import Versions.NAV_VERSION
 
@@ -26,9 +29,15 @@ object Versions {
     const val ANDROIDX_CORE_KTX_VERSION = "1.8.0"
     const val ANDROIDX_COMPAT = "1.5.1"
     const val ANDROIDX_CONSTRAINT_LAYOUT_VERSION = "2.1.4"
+    const val ANDROIDX_ACTIVITY_KTX = "1.3.1"
+    const val ANDROIDX_FRAGMENT_KTX = "1.5.2"
+
 
     // Google
     const val GOOGLE_MATERIAL_VERSION = "1.7.0"
+
+    // Lifecycle
+    const val LIVECYCLE_VERSION = "2.5.1"
 
     // Test
     const val JUNIT_VERSION = "4.13.2"
@@ -46,15 +55,17 @@ object Versions {
 object AndroidX {
     const val CORE_KTX = "androidx.core:core-ktx:$ANDROIDX_CORE_KTX_VERSION"
     const val APP_COMPAT = "androidx.appcompat:appcompat:$ANDROIDX_COMPAT"
-    const val MATERIAL = "androidx.compose.material:material:1.0.0-rc02"
+//    const val MATERIAL = "androidx.compose.material:material:1.0.0-rc02"
     const val CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:$ANDROIDX_CONSTRAINT_LAYOUT_VERSION"
 
-    const val LEGACY = "androidx.legacy:legacy-support-v4:1.0.0"
-    const val LIFECYCLE_VIEW_MODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
-    const val LIFECYCLE_LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
-    const val ACTIVITY = "androidx.activity:activity-ktx:1.3.1"
-    const val FRAGMENT = "androidx.fragment:fragment-ktx:1.5.2"
-    const val DATASTORE = "androidx.datastore:datastore-preferences:1.0.0"
+//    const val LEGACY = "androidx.legacy:legacy-support-v4:1.0.0"
+    const val LIFECYCLE_VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:$LIVECYCLE_VERSION"
+    const val LIFECYCLE_LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:$LIVECYCLE_VERSION"
+    const val LIFECYCLE_VIEWMODEL_SAVEDSTATE = "androidx.lifecycle:lifecycle-viewmodel-savedstate:$LIVECYCLE_VERSION"
+    const val LIFECYCLER_ANNOTATION_PROCESSOR = "androidx.lifecycle:lifecycle-compiler:$LIVECYCLE_VERSION"
+    const val ACTIVITY = "androidx.activity:activity-ktx:$ANDROIDX_ACTIVITY_KTX"
+    const val FRAGMENT = "androidx.fragment:fragment-ktx:$ANDROIDX_FRAGMENT_KTX"
+//    const val DATASTORE = "androidx.datastore:datastore-preferences:1.0.0"
 }
 
 object Google {
@@ -78,23 +89,23 @@ object DaggerHilt {
     const val DAGGER_HILT_ANDROIDX_COMPILER = "androidx.hilt:hilt-compiler:$HILT_COMPILER_VERSION"
     const val DAGGER_HILT_JAVAX = "javax.inject:javax.inject:$JAVAX_INJECT_VERSION"
 }
-//
-//object Retrofit {
-//    const val RETROFIT = "com.squareup.retrofit2:retrofit:2.9.0"
-//    const val CONVERTER_GSON = "com.squareup.retrofit2:converter-gson:2.9.0"
-//    const val CONVERTER_JAXB = "com.squareup.retrofit2:converter-jaxb:2.9.0"
-//}
-//
-//object OkHttp {
-//    const val OKHTTP = "com.squareup.okhttp3:okhttp:4.9.1"
-//    const val LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor:4.9.1"
-//}
-//
-//object Coroutines {
-//    const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
-//    const val COROUTINES_PLAY_SERVICES = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.1.1"
-//}
-//
+
+object Retrofit {
+    const val RETROFIT = "com.squareup.retrofit2:retrofit:2.9.0"
+    const val CONVERTER_GSON = "com.squareup.retrofit2:converter-gson:2.9.0"
+    const val CONVERTER_JAXB = "com.squareup.retrofit2:converter-jaxb:2.9.0"
+}
+
+object OkHttp {
+    const val OKHTTP = "com.squareup.okhttp3:okhttp:4.9.1"
+    const val LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor:4.9.1"
+}
+
+object Coroutines {
+    const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
+    const val COROUTINES_PLAY_SERVICES = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.1.1"
+}
+
 //object NavComponent {
 //    const val NAVIGATION_FRAGMENT = "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
 //    const val NAVIGATION_UI = "androidx.navigation:navigation-ui-ktx:$NAV_VERSION"

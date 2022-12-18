@@ -3,10 +3,15 @@ package com.ej.presentation.ui.snack
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ej.presentation.R
+import com.ej.presentation.base.BaseActivity
+import com.ej.presentation.databinding.ActivitySnackBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-class SnackActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_snack)
+@AndroidEntryPoint
+class SnackActivity : BaseActivity<ActivitySnackBinding>(R.layout.activity_snack) {
+
+
+    override fun init() {
+
     }
 }

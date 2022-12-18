@@ -12,6 +12,8 @@ android {
         minSdk = 23
         targetSdk = 32
 
+
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -37,6 +39,20 @@ dependencies {
     implementation (AndroidX.CORE_KTX)
     implementation (AndroidX.APP_COMPAT)
     implementation (Google.MATERIAL)
+
+    // Retrofit
+    implementation (Retrofit.RETROFIT)
+    implementation (Retrofit.CONVERTER_GSON)
+    implementation (Retrofit.CONVERTER_JAXB)
+
+    //okHttp
+    implementation (OkHttp.OKHTTP)
+    implementation (OkHttp.LOGGING_INTERCEPTOR)
+
+    //coroutines
+    implementation (Coroutines.COROUTINES)
+    implementation (Coroutines.COROUTINES_PLAY_SERVICES)
+
 
     // dager hilt
     implementation (DaggerHilt.DAGGER_HILT)

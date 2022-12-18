@@ -12,6 +12,9 @@ android {
         minSdk = 23
         targetSdk = 32
 
+        val APP_VERSION = project.property("APP_VERSION") as String
+        buildConfigField("String","APP_VERSION",APP_VERSION)
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -29,6 +32,10 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    buildFeatures{
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -42,14 +49,41 @@ dependencies {
 
     // dagger hilt
     implementation (DaggerHilt.DAGGER_HILT)
-    implementation("androidx.appcompat:appcompat:1.5.1")
-    implementation("com.google.android.material:material:1.4.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
     kapt (DaggerHilt.DAGGER_HILT_COMPILER)
     kapt (DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
+
+    // Lifecycle
+    implementation (AndroidX.LIFECYCLE_LIVEDATA)
+    implementation (AndroidX.LIFECYCLE_VIEWMODEL)
+    implementation (AndroidX.LIFECYCLE_VIEWMODEL_SAVEDSTATE)
+    kapt (AndroidX.LIFECYCLER_ANNOTATION_PROCESSOR)
+
+    implementation (AndroidX.ACTIVITY)
+    implementation (AndroidX.FRAGMENT)
+
+//    // Retrofit
+//    implementation (Retrofit.RETROFIT)
+//    implementation (Retrofit.CONVERTER_GSON)
+//    implementation (Retrofit.CONVERTER_JAXB)
+//
+//    //okHttp
+//    implementation (OkHttp.OKHTTP)
+//    implementation (OkHttp.LOGGING_INTERCEPTOR)
+
+    //coroutines
+    implementation (Coroutines.COROUTINES)
+
+//    //nav component
+//    implementation (NavComponent.NAVIGATION_FRAGMENT)
+//    implementation (NavComponent.NAVIGATION_UI)
+//    implementation (NavComponent.NAVIGATION_DYNAMIC_FEATURES_FRAGMENT)
+//    implementation (NavComponent.NAVIGATION_COMPOSE)
 
     testImplementation (Test.JUNIT)
 
     androidTestImplementation (AndroidTest.EXT_JUNIT)
     androidTestImplementation (AndroidTest.ESPRESSO_CORE)
+//    androidTestImplementation (NavComponent.NAVIGATION_TESTING)
 }

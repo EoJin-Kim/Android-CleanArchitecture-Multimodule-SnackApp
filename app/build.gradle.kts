@@ -15,6 +15,9 @@ android {
         versionCode = 1
         versionName = "1.0"
 
+        val BASE_URL = project.property("MY_URL") as String
+        buildConfigField("String","BASE_URL",BASE_URL)
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -32,6 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        dataBinding = true
+    }
 }
 
 dependencies {
@@ -43,6 +49,15 @@ dependencies {
     implementation (AndroidX.APP_COMPAT)
     implementation (AndroidX.CONSTRAINT_LAYOUT)
     implementation (Google.MATERIAL)
+
+    // Retrofit
+    implementation (Retrofit.RETROFIT)
+    implementation (Retrofit.CONVERTER_GSON)
+    implementation (Retrofit.CONVERTER_JAXB)
+
+    //okHttp
+    implementation (OkHttp.OKHTTP)
+    implementation (OkHttp.LOGGING_INTERCEPTOR)
 
     // dager hilt
     implementation (DaggerHilt.DAGGER_HILT)
