@@ -1,20 +1,15 @@
 package com.ej.presentation.ui.splash
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
 import com.ej.presentation.R
 import com.ej.presentation.base.BaseActivity
 import com.ej.presentation.databinding.ActivitySplashBinding
-import com.ej.presentation.viewmodel.SplashViewModel
+import com.ej.presentation.viewmodel.splash.SplashViewModel
 import androidx.activity.viewModels
-import androidx.navigation.fragment.findNavController
-import com.ej.domain.utils.ErrorType
 import com.ej.domain.utils.ScreenState
 import com.ej.presentation.BuildConfig
 import com.ej.presentation.ui.snack.SnackActivity
 import com.ej.presentation.widget.extension.startActivityAndFinish
 import dagger.hilt.android.AndroidEntryPoint
-import kotlin.concurrent.thread
 
 @AndroidEntryPoint
 class SplashActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_splash) {

@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/snack_nav_graph">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/snack_nav_graph"
+    app:startDestination="@id/pickSnackFragment">
 
+    <fragment
+        android:id="@+id/pickSnackFragment"
+        android:name="com.ej.presentation.ui.snack.fragment.PickSnackFragment"
+        tools:layout="@layout/fragment_pick_snack"
+        android:label="fragment_pick_shop">
+
+        <action
+            android:id="@+id/action_pickSnackFragment_to_pickShopFragment"
+            app:destination="@id/pickShopFragment" />
+        <action
+            android:id="@+id/action_pickSnackFragment_to_resultSnackFragment"
+            app:destination="@id/resultSnackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickShopFragment"
+        android:name="com.ej.presentation.ui.snack.fragment.PickShopFragment"
+        tools:layout="@layout/fragment_pick_shop"
+        android:label="PickShopFragment" >
+        <action
+            android:id="@+id/action_pickShopFragment_to_pickSnackFragment"
+            app:destination="@id/pickSnackFragment" />
+        <action
+            android:id="@+id/action_pickShopFragment_to_resultSnackFragment"
+            app:destination="@id/resultSnackFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultSnackFragment"
+        android:name="com.ej.presentation.ui.snack.fragment.ResultSnackFragment"
+        tools:layout="@layout/fragment_result_snack"
+        android:label="ResultSnackFragment" >
+        <action
+            android:id="@+id/action_resultSnackFragment_to_pickShopFragment"
+            app:destination="@id/pickShopFragment" />
+        <action
+            android:id="@+id/action_resultSnackFragment_to_pickSnackFragment"
+            app:destination="@id/pickSnackFragment" />
+    </fragment>
 </navigation>

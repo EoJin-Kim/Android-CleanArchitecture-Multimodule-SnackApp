@@ -51,6 +51,9 @@ dependencies {
     implementation (DaggerHilt.DAGGER_HILT)
     implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+    implementation("androidx.appcompat:appcompat:1.5.1")
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     kapt (DaggerHilt.DAGGER_HILT_COMPILER)
     kapt (DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 
@@ -75,11 +78,11 @@ dependencies {
     //coroutines
     implementation (Coroutines.COROUTINES)
 
-//    //nav component
-//    implementation (NavComponent.NAVIGATION_FRAGMENT)
-//    implementation (NavComponent.NAVIGATION_UI)
-//    implementation (NavComponent.NAVIGATION_DYNAMIC_FEATURES_FRAGMENT)
-//    implementation (NavComponent.NAVIGATION_COMPOSE)
+    //nav component
+    implementation (NavComponent.NAVIGATION_FRAGMENT)
+    implementation (NavComponent.NAVIGATION_UI)
+    implementation (NavComponent.NAVIGATION_DYNAMIC_FEATURES_FRAGMENT)
+    implementation (NavComponent.NAVIGATION_COMPOSE)
 
     testImplementation (Test.JUNIT)
 

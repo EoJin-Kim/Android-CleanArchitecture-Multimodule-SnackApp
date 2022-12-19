@@ -11,6 +11,7 @@ import Versions.HILT_COMPILER_VERSION
 import Versions.JAVAX_INJECT_VERSION
 import Versions.JUNIT_VERSION
 import Versions.LIVECYCLE_VERSION
+import Versions.NAV_VERSION
 
 //import Versions.NAV_VERSION
 
@@ -106,13 +107,13 @@ object Coroutines {
     const val COROUTINES_PLAY_SERVICES = "org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.1.1"
 }
 
-//object NavComponent {
-//    const val NAVIGATION_FRAGMENT = "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
-//    const val NAVIGATION_UI = "androidx.navigation:navigation-ui-ktx:$NAV_VERSION"
-//    const val NAVIGATION_DYNAMIC_FEATURES_FRAGMENT = "androidx.navigation:navigation-dynamic-features-fragment:$NAV_VERSION"
-//    const val NAVIGATION_TESTING = "androidx.navigation:navigation-testing:$NAV_VERSION"
-//    const val NAVIGATION_COMPOSE = "androidx.navigation:navigation-compose:2.4.0-alpha10"
-//}
+object NavComponent {
+    const val NAVIGATION_FRAGMENT = "androidx.navigation:navigation-fragment-ktx:$NAV_VERSION"
+    const val NAVIGATION_UI = "androidx.navigation:navigation-ui-ktx:$NAV_VERSION"
+    const val NAVIGATION_DYNAMIC_FEATURES_FRAGMENT = "androidx.navigation:navigation-dynamic-features-fragment:$NAV_VERSION"
+    const val NAVIGATION_TESTING = "androidx.navigation:navigation-testing:$NAV_VERSION"
+    const val NAVIGATION_COMPOSE = "androidx.navigation:navigation-compose:2.4.0-alpha10"
+}
 //
 //object Firebase{
 //    const val FIREBASE_DATABASE_KTX = "com.google.firebase:firebase-database-ktx:20.0.3"

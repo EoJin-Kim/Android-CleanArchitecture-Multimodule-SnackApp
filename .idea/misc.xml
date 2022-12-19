@@ -3,8 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/drawable/ic_baseline_group_24.xml" value="0.5295" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/drawable/ic_baseline_map_24.xml" value="0.5295" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/drawable/ic_baseline_more_horiz_24.xml" value="0.5295" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/drawable/ic_baseline_restaurant_24.xml" value="0.5295" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/layout/activity_account.xml" value="0.5354166666666667" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/layout/activity_group.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/layout/activity_map.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/layout/activity_option.xml" value="0.5208333333333334" />
         <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/layout/activity_snack.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/layout/activity_splash.xml" value="0.33" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/layout/fragment_pick_shop.xml" value="0.5354166666666667" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/layout/fragment_pick_snack.xml" value="0.5354166666666667" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/layout/fragment_result_snack.xml" value="0.5208333333333334" />
+        <entry key="..\:/Users/hfhsh/AndroidStudioProjects/SnackApp/presentation/src/main/res/menu/bottom_menu.xml" value="0.534375" />
       </map>
     </option>
   </component>

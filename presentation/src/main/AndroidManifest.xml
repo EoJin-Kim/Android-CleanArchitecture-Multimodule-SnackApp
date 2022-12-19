@@ -4,6 +4,18 @@
 
     <application>
         <activity
+            android:name=".OptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.snack.SnackActivity"
             android:exported="false" />
         <activity

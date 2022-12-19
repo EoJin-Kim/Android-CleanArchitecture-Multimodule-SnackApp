@@ -1,4 +1,4 @@
-package com.ej.presentation.viewmodel
+package com.ej.presentation.viewmodel.splash
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

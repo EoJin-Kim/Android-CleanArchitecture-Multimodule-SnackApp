@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/snackActivity"
+        android:icon="@drawable/ic_baseline_restaurant_24"
+        android:title="간식" />
+    <item
+        android:id="@+id/groupActivity"
+        android:icon="@drawable/ic_baseline_group_24"
+        android:title="그룹" />
+    <item
+        android:id="@+id/mapActivity"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="지도" />
+    <item
+        android:id="@+id/optionActivity"
+        android:icon="@drawable/ic_baseline_more_horiz_24"
+        android:title="더보기" />
+</menu>
