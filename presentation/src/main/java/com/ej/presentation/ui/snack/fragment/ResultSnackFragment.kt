@@ -16,4 +16,9 @@ class ResultSnackFragment : BaseFragment<FragmentResultSnackBinding>(R.layout.fr
 
     }
 
+
+    companion object{
+        @JvmStatic
+        fun newInstance() = ResultSnackFragment()
+    }
 }

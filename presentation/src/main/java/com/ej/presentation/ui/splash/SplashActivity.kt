@@ -16,9 +16,10 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_spl
     private val splashViewModel by viewModels<SplashViewModel>()
 
     override fun init() {
+        startActivityAndFinish(this,SnackActivity::class.java)
         // app 버전 체크 확인 후 SnackAcitivty로 넘어가기
-        observeViewModel()
-        splashViewModel.getVersion()
+//        observeViewModel()
+//        splashViewModel.getVersion()
     }
 
     private fun observeViewModel() {

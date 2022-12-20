@@ -16,4 +16,9 @@ class PickShopFragment : BaseFragment<FragmentPickShopBinding>(R.layout.fragment
 
     }
 
+    companion object{
+        @JvmStatic
+        fun newInstance() = PickShopFragment()
+    }
+
 }

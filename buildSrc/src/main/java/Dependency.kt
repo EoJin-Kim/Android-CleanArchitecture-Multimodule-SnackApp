@@ -35,7 +35,7 @@ object Versions {
 
 
     // Google
-    const val GOOGLE_MATERIAL_VERSION = "1.7.0"
+    const val GOOGLE_MATERIAL_VERSION = "1.6.1"
 
     // Lifecycle
     const val LIVECYCLE_VERSION = "2.5.1"

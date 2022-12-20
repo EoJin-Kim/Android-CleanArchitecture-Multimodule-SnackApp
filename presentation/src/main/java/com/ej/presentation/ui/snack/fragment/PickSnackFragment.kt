@@ -16,4 +16,9 @@ class PickSnackFragment : BaseFragment<FragmentPickSnackBinding>(R.layout.fragme
 
     }
 
+    companion object{
+        @JvmStatic
+        fun newInstance() = PickSnackFragment()
+    }
+
 }
