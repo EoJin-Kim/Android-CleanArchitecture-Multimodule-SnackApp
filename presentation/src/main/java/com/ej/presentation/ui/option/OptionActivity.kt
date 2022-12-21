@@ -9,7 +9,11 @@ import com.ej.presentation.databinding.ActivityOptionBinding
 class OptionActivity : BaseActivity<ActivityOptionBinding>(R.layout.activity_option) {
 
     override fun init() {
+        setBnvListener(R.id.optionActivity)
+    }
 
-
+    private fun setBnvListener(bnvMenuId: Int) {
+        binding.bnvSnack.selectedItemId = bnvMenuId
+        binding.bnvSnack.setOnItemSelectedListener(bnvSelectListener)
     }
 }

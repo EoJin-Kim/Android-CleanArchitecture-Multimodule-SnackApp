@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/group_nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/groupFragment">
+
+    <fragment
+        android:id="@+id/groupFragment"
+        android:name="com.ej.presentation.ui.group.fragment.GroupFragment"
+        android:label="GroupFragment"
+        tools:layout="@layout/fragment_group"/>
+</navigation>

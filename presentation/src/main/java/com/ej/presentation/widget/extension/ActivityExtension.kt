@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 
 // intent and finish
 fun AppCompatActivity.startActivityAndFinish(context: Context, activity: Class<*>){
-    startActivity(Intent(context,activity).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
+    startActivity(Intent(context,activity)
+        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        .addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+    )
     this.finish()
 }

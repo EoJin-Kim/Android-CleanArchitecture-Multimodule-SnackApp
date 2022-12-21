@@ -9,6 +9,11 @@ import com.ej.presentation.databinding.ActivityMapBinding
 class MapActivity : BaseActivity<ActivityMapBinding>(R.layout.activity_map) {
 
     override fun init() {
+        setBnvListener(R.id.mapActivity)
+    }
 
+    private fun setBnvListener(bnvMenuId: Int) {
+        binding.bnvSnack.selectedItemId = bnvMenuId
+        binding.bnvSnack.setOnItemSelectedListener(bnvSelectListener)
     }
 }
