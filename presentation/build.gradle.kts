@@ -49,6 +49,8 @@ dependencies {
 
     // dagger hilt
     implementation (DaggerHilt.DAGGER_HILT)
+    implementation("com.android.support:appcompat-v7:28.0.0")
+    implementation("com.android.support.constraint:constraint-layout:2.0.4")
     kapt (DaggerHilt.DAGGER_HILT_COMPILER)
     kapt (DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 
