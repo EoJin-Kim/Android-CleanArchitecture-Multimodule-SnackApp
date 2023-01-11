@@ -19,7 +19,7 @@
             android:layout_height="0dp"
             android:layout_weight="10"
             app:defaultNavHost="true"
-            app:navGraph="@navigation/snack_nav_graph"/>
+            app:navGraph="@navigation/main_nav_graph"/>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bnv_snack"

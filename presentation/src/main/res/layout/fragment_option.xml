@@ -9,7 +9,7 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.option.fragment.OptionFragment">
+        tools:context=".ui.main.option.OptionFragment">
 
         <!-- TODO: Update blank fragment layout -->
         <TextView

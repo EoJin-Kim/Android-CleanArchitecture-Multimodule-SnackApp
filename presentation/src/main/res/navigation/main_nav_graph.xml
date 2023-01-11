@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/snackFragment">
+
+    <fragment
+        android:id="@+id/snackFragment"
+        android:name="com.ej.presentation.ui.main.snack.fragment.SnackFragment"
+        tools:layout="@layout/fragment_snack">
+        <action
+            android:id="@+id/action_snackFragment_to_groupFragment"
+            app:destination="@id/groupFragment" />
+        <action
+            android:id="@+id/action_snackFragment_to_mapFragment"
+            app:destination="@id/mapFragment" />
+        <action
+            android:id="@+id/action_snackFragment_to_optionFragment"
+            app:destination="@id/optionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/groupFragment"
+        android:name="com.ej.presentation.ui.main.group.GroupFragment"
+        android:label="GroupFragment"
+        tools:layout="@layout/fragment_group"/>
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.ej.presentation.ui.main.map.MapFragment"
+        android:label="MapFragment"
+        tools:layout="@layout/fragment_map"/>
+    <fragment
+        android:id="@+id/optionFragment"
+        android:name="com.ej.presentation.ui.main.option.OptionFragment"
+        android:label="OptionFragment"
+        tools:layout="@layout/fragment_option"/>
+</navigation>

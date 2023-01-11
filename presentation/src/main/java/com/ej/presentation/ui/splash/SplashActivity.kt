@@ -7,7 +7,7 @@ import com.ej.presentation.viewmodel.splash.SplashViewModel
 import androidx.activity.viewModels
 import com.ej.domain.utils.ScreenState
 import com.ej.presentation.BuildConfig
-import com.ej.presentation.ui.snack.SnackActivity
+import com.ej.presentation.ui.main.MainActivity
 import com.ej.presentation.widget.extension.startActivityAndFinish
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -16,7 +16,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_spl
     private val splashViewModel by viewModels<SplashViewModel>()
 
     override fun init() {
-        startActivityAndFinish(this,SnackActivity::class.java)
+        startActivityAndFinish(this, MainActivity::class.java)
         // app 버전 체크 확인 후 SnackAcitivty로 넘어가기
 //        observeViewModel()
 //        splashViewModel.getVersion()
@@ -28,7 +28,7 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_spl
                 ScreenState.LOADING -> {
                     if(splashViewModel.apiCallResultVersion.version==BuildConfig.APP_VERSION){
                         shortShowToast("최신 버전입니다")
-                        this.startActivityAndFinish(this,SnackActivity::class.java)
+                        this.startActivityAndFinish(this, MainActivity::class.java)
                     }else{
                         shortShowToast("최신 버전이 아닙니다. 앱을 업데이트하세요")
                     }

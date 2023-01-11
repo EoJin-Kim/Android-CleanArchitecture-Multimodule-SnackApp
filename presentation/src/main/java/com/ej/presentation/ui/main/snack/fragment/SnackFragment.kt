@@ -1,4 +1,4 @@
-package com.ej.presentation.ui.snack.fragment
+package com.ej.presentation.ui.main.snack.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -28,22 +28,22 @@ class SnackFragment : BaseFragment<FragmentSnackBinding>(R.layout.fragment_snack
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val tabAdapter = object : FragmentStateAdapter(this) {
-            override fun getItemCount(): Int {
-                return fragList.size
-            }
-            override fun createFragment(position: Int): Fragment {
-                return fragList[position]
-            }
-        }
-        binding.pager2.adapter = tabAdapter
-
-        // tab과 viewpager를 연결한다다
-        TabLayoutMediator(
-            binding.tabs,
-            binding.pager2
-        ) { tab: TabLayout.Tab, i: Int ->
-            tab.text = tabNameList[i]
-        }.attach()
+//        val tabAdapter = object : FragmentStateAdapter(this) {
+//            override fun getItemCount(): Int {
+//                return fragList.size
+//            }
+//            override fun createFragment(position: Int): Fragment {
+//                return fragList[position]
+//            }
+//        }
+//        binding.pager2.adapter = tabAdapter
+//
+//        // tab과 viewpager를 연결한다다
+//        TabLayoutMediator(
+//            binding.tabs,
+//            binding.pager2
+//        ) { tab: TabLayout.Tab, i: Int ->
+//            tab.text = tabNameList[i]
+//        }.attach()
     }
 }

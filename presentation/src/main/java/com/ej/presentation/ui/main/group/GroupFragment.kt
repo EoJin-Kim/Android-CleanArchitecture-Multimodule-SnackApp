@@ -1,4 +1,4 @@
-package com.ej.presentation.ui.option.fragment
+package com.ej.presentation.ui.main.group
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,12 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.ej.presentation.R
 import com.ej.presentation.base.BaseFragment
-import com.ej.presentation.databinding.FragmentOptionBinding
+import com.ej.presentation.databinding.FragmentGroupBinding
 
 
-class OptionFragment : BaseFragment<FragmentOptionBinding>(R.layout.fragment_option) {
+class GroupFragment : BaseFragment<FragmentGroupBinding>(R.layout.fragment_group) {
 
     override fun init() {
-
     }
+
+
 }

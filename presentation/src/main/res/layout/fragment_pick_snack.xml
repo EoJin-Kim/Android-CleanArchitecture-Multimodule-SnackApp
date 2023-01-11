@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.snack.fragment.PickSnackFragment">
+        tools:context=".ui.main.snack.fragment.PickSnackFragment">
 
         <!-- TODO: Update blank fragment layout -->
         <TextView

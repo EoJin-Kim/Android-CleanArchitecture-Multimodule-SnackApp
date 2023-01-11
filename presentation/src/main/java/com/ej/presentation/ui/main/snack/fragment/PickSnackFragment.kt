@@ -1,4 +1,4 @@
-package com.ej.presentation.ui.snack.fragment
+package com.ej.presentation.ui.main.snack.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import com.ej.presentation.R
 import com.ej.presentation.base.BaseFragment
-import com.ej.presentation.databinding.FragmentPickShopBinding
+import com.ej.presentation.databinding.FragmentPickSnackBinding
 
 
-class PickShopFragment : BaseFragment<FragmentPickShopBinding>(R.layout.fragment_pick_shop) {
+class PickSnackFragment : BaseFragment<FragmentPickSnackBinding>(R.layout.fragment_pick_snack) {
 
     override fun init() {
 
@@ -18,7 +18,7 @@ class PickShopFragment : BaseFragment<FragmentPickShopBinding>(R.layout.fragment
 
     companion object{
         @JvmStatic
-        fun newInstance() = PickShopFragment()
+        fun newInstance() = PickSnackFragment()
     }
 
 }

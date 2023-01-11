@@ -1,4 +1,4 @@
-package com.ej.presentation.ui.snack.fragment
+package com.ej.presentation.ui.main.snack.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
