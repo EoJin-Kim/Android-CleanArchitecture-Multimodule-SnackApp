@@ -34,4 +34,5 @@ dependencies {
 
     // dager hilt
     implementation (DaggerHilt.DAGGER_HILT_JAVAX)
+    androidTestImplementation("junit:junit:4.12")
 }

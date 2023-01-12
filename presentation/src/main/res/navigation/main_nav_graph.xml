@@ -6,21 +6,6 @@
     app:startDestination="@id/snackFragment">
 
     <fragment
-        android:id="@+id/snackFragment"
-        android:name="com.ej.presentation.ui.main.snack.fragment.SnackFragment"
-        tools:layout="@layout/fragment_snack">
-        <action
-            android:id="@+id/action_snackFragment_to_groupFragment"
-            app:destination="@id/groupFragment" />
-        <action
-            android:id="@+id/action_snackFragment_to_mapFragment"
-            app:destination="@id/mapFragment" />
-        <action
-            android:id="@+id/action_snackFragment_to_optionFragment"
-            app:destination="@id/optionFragment" />
-    </fragment>
-
-    <fragment
         android:id="@+id/groupFragment"
         android:name="com.ej.presentation.ui.main.group.GroupFragment"
         android:label="GroupFragment"
@@ -35,4 +20,9 @@
         android:name="com.ej.presentation.ui.main.option.OptionFragment"
         android:label="OptionFragment"
         tools:layout="@layout/fragment_option"/>
+    <fragment
+        android:id="@+id/snackFragment"
+        android:name="com.ej.presentation.ui.main.snack.fragment.SnackFragment"
+        android:label="SnackFragment"
+        tools:layout="@layout/fragment_snack"/>
 </navigation>

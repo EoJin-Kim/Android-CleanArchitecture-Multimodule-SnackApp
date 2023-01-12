@@ -1,5 +1,9 @@
 package com.ej.presentation.ui.splash
 
+import android.content.Context
+import android.util.AttributeSet
+import android.util.Log
+import android.view.View
 import com.ej.presentation.R
 import com.ej.presentation.base.BaseActivity
 import com.ej.presentation.databinding.ActivitySplashBinding
@@ -16,10 +20,16 @@ class SplashActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_spl
     private val splashViewModel by viewModels<SplashViewModel>()
 
     override fun init() {
+        Log.d("MYTAG","splash create")
+
         startActivityAndFinish(this, MainActivity::class.java)
         // app 버전 체크 확인 후 SnackAcitivty로 넘어가기
 //        observeViewModel()
 //        splashViewModel.getVersion()
+    }
+
+    override fun onCreateView(name: String, context: Context, attrs: AttributeSet): View? {
+        return super.onCreateView(name, context, attrs)
     }
 
     private fun observeViewModel() {
