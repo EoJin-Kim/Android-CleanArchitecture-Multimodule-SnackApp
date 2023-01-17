@@ -1,21 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
     </data>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.main.snack.fragment.ResultSnackFragment">
+        android:layout_height="match_parent">
 
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="resultsnack" />
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="32dp"
+                android:paddingRight="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border_20_white"
+                    android:elevation="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/main_pink"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        tools:text="간식" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:itemCount="5"
+                        tools:listitem="@layout/item_result_member_snack"></androidx.recyclerview.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:text="총 0명 주문" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/border_20_white"
+                    android:elevation="3dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/main_pink"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        tools:text="음료" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:itemCount="5"
+                        tools:listitem="@layout/item_result_member_snack" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:text="총 0명 주문" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
