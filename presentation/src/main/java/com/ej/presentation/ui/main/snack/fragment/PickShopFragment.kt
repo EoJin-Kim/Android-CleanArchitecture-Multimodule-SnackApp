@@ -14,8 +14,12 @@ import com.ej.presentation.databinding.FragmentPickShopBinding
 class PickShopFragment : BaseFragment<FragmentPickShopBinding>(R.layout.fragment_pick_shop) {
 
     override fun init() {
-        Log.d("MYTAG","pick shop create")
+        Log.d("MYTAG","shop init")
 
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
     }
 
     companion object{

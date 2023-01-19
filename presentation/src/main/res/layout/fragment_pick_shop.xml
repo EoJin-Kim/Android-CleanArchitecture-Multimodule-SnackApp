@@ -11,11 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ScrollView
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
             <LinearLayout
+                android:id="@+id/scrollViewLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -25,7 +27,7 @@
                 android:paddingBottom="32dp">
 
                 <LinearLayout
-                    android:id="@+id/linearLayout"
+                    android:id="@+id/foodLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/border_20_white"
@@ -74,6 +76,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/drinkLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
@@ -136,9 +139,6 @@
                     android:textSize="40sp"
                     android:textStyle="bold" />
             </LinearLayout>
-        </ScrollView>
-
-
-
+        </androidx.core.widget.NestedScrollView>
     </LinearLayout>
 </layout>
