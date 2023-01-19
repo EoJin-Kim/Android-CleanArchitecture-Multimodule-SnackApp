@@ -1,5 +1,7 @@
 package com.ej.presentation.viewmodel.splash
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -15,15 +17,16 @@ import javax.inject.Inject
 
 @HiltViewModel
 class SplashViewModel @Inject constructor(
+    private val app: Application,
     private val getAppVersionUseCase: GetAppVersionUseCase
-): ViewModel(), RemoteErrorEmitter {
+): AndroidViewModel(app), RemoteErrorEmitter {
 
     private val _apiCallEvent = SingleLiveEvent<ScreenState>()
     val apiCallEvent: LiveData<ScreenState>
         get() = _apiCallEvent
 
 
-    var apiCallResultVersion = DomainAppVersion("0.0.0")
+    var apiCallResultVersion : DomainAppVersion? = null
     var apiErrorType = ErrorType.UNKNOWN
     var apiErrorMessage = "none"
     fun getVersion() {
@@ -38,6 +41,9 @@ class SplashViewModel @Inject constructor(
                 }
             }
         }
+    }
+    fun autoLoginCheck() : Boolean{
+        return false
     }
 
     override fun onError(msg: String) {
