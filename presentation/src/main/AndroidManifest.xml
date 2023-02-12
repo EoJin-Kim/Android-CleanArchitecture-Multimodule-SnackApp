@@ -15,8 +15,11 @@
             android:exported="false" />
 
         <activity
-            android:name=".ui.splash.SplashActivity"
-            android:exported="true">
+            android:name=".ui.splash.IntroActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SnackApp.Splash"
+
+            >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

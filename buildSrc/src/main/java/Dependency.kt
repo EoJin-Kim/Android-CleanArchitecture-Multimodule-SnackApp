@@ -2,7 +2,9 @@ import Versions.ANDROIDX_ACTIVITY_KTX
 import Versions.ANDROIDX_COMPAT
 import Versions.ANDROIDX_CONSTRAINT_LAYOUT_VERSION
 import Versions.ANDROIDX_CORE_KTX_VERSION
+import Versions.ANDROIDX_DATASTORE_VERSION
 import Versions.ANDROIDX_FRAGMENT_KTX
+import Versions.ANDROIDX_SPLASHSCREEN_VERSION
 import Versions.DAGGER_VERSION
 import Versions.EXPRESSO_CORE
 import Versions.EXT_JUNIT_VERSION
@@ -32,6 +34,8 @@ object Versions {
     const val ANDROIDX_CONSTRAINT_LAYOUT_VERSION = "2.1.4"
     const val ANDROIDX_ACTIVITY_KTX = "1.3.1"
     const val ANDROIDX_FRAGMENT_KTX = "1.5.2"
+    const val ANDROIDX_DATASTORE_VERSION = "1.0.0"
+    const val ANDROIDX_SPLASHSCREEN_VERSION = "1.0.0"
 
 
     // Google
@@ -66,7 +70,9 @@ object AndroidX {
     const val LIFECYCLER_ANNOTATION_PROCESSOR = "androidx.lifecycle:lifecycle-compiler:$LIVECYCLE_VERSION"
     const val ACTIVITY = "androidx.activity:activity-ktx:$ANDROIDX_ACTIVITY_KTX"
     const val FRAGMENT = "androidx.fragment:fragment-ktx:$ANDROIDX_FRAGMENT_KTX"
-//    const val DATASTORE = "androidx.datastore:datastore-preferences:1.0.0"
+    const val DATASTORE = "androidx.datastore:datastore-preferences:$ANDROIDX_DATASTORE_VERSION"
+    const val SPLASH_SCREEN = "androidx.core:core-splashscreen:$ANDROIDX_SPLASHSCREEN_VERSION"
+
 }
 
 object Google {

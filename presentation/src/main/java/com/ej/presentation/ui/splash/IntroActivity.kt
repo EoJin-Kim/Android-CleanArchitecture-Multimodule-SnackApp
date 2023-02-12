@@ -1,10 +1,7 @@
 package com.ej.presentation.ui.splash
 
-import android.app.Activity
-import android.content.Context
-import android.util.AttributeSet
+import android.os.Bundle
 import android.util.Log
-import android.view.View
 import com.ej.presentation.R
 import com.ej.presentation.base.BaseActivity
 import com.ej.presentation.databinding.ActivitySplashBinding
@@ -15,27 +12,27 @@ import com.ej.presentation.BuildConfig
 import com.ej.presentation.ui.main.MainActivity
 import com.ej.presentation.widget.extension.startActivityAndFinish
 import dagger.hilt.android.AndroidEntryPoint
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 
 @AndroidEntryPoint
-class SplashActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_splash) {
+class IntroActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_splash) {
     private val splashViewModel by viewModels<SplashViewModel>()
 
     override fun init() {
         Log.d("MYTAG","splash create")
-
-
         // app 버전 체크 확인 후 SnackAcitivty로 넘어가기
         appVersionObserver()
 //        splashViewModel.getVersion()
-
 
         startActivityAndFinish(this, MainActivity::class.java)
 
 
     }
 
-    override fun onCreateView(name: String, context: Context, attrs: AttributeSet): View? {
-        return super.onCreateView(name, context, attrs)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        // databinding 이전에 호출해줘야 에러 안남
+        installSplashScreen()
+        super.onCreate(savedInstanceState)
     }
 
     private fun appVersionObserver() {

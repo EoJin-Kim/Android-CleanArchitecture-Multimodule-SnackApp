@@ -52,6 +52,9 @@ dependencies {
     kapt (DaggerHilt.DAGGER_HILT_COMPILER)
     kapt (DaggerHilt.DAGGER_HILT_ANDROIDX_COMPILER)
 
+    // splash
+    implementation (AndroidX.SPLASH_SCREEN)
+
     // Lifecycle
     implementation (AndroidX.LIFECYCLE_LIVEDATA)
     implementation (AndroidX.LIFECYCLE_VIEWMODEL)
