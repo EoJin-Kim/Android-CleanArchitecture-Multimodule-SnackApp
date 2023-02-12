@@ -13,6 +13,7 @@ import Versions.HILT_COMPILER_VERSION
 import Versions.JAVAX_INJECT_VERSION
 import Versions.JUNIT_VERSION
 import Versions.LIVECYCLE_VERSION
+import Versions.LOTTIE_VERSION
 import Versions.NAV_VERSION
 
 //import Versions.NAV_VERSION
@@ -51,6 +52,7 @@ object Versions {
     const val EXT_JUNIT_VERSION = "1.1.4"
     const val EXPRESSO_CORE = "3.5.0"
 
+    const val LOTTIE_VERSION = "3.4.0"
 }
 
 //object Kotlin {
@@ -119,6 +121,10 @@ object NavComponent {
     const val NAVIGATION_DYNAMIC_FEATURES_FRAGMENT = "androidx.navigation:navigation-dynamic-features-fragment:$NAV_VERSION"
     const val NAVIGATION_TESTING = "androidx.navigation:navigation-testing:$NAV_VERSION"
     const val NAVIGATION_COMPOSE = "androidx.navigation:navigation-compose:2.4.0-alpha10"
+}
+
+object Lottie {
+    const val LOTTIE = "com.airbnb.android:lottie:$LOTTIE_VERSION"
 }
 //
 //object Firebase{

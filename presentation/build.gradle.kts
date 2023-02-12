@@ -55,6 +55,9 @@ dependencies {
     // splash
     implementation (AndroidX.SPLASH_SCREEN)
 
+    // Lottie
+    implementation (Lottie.LOTTIE)
+
     // Lifecycle
     implementation (AndroidX.LIFECYCLE_LIVEDATA)
     implementation (AndroidX.LIFECYCLE_VIEWMODEL)

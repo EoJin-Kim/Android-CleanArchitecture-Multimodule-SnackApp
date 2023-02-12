@@ -17,7 +17,7 @@
         <item name="windowNoTitle">true</item>
     </style>
     <style name="Theme.SnackApp.Splash" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenBackground">@color/main_purple_pink</item>
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/snack_splash</item>
         <item name="postSplashScreenTheme">@style/Theme.SnackApp</item>
     </style>

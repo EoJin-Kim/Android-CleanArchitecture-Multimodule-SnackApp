@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.util.Log
 import com.ej.presentation.R
 import com.ej.presentation.base.BaseActivity
-import com.ej.presentation.databinding.ActivitySplashBinding
 import com.ej.presentation.viewmodel.splash.SplashViewModel
 import androidx.activity.viewModels
 import com.ej.domain.utils.ScreenState
@@ -13,9 +12,13 @@ import com.ej.presentation.ui.main.MainActivity
 import com.ej.presentation.widget.extension.startActivityAndFinish
 import dagger.hilt.android.AndroidEntryPoint
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.lifecycleScope
+import com.ej.presentation.databinding.ActivityIntroBinding
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
-class IntroActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_splash) {
+class IntroActivity : BaseActivity<ActivityIntroBinding>(R.layout.activity_intro) {
     private val splashViewModel by viewModels<SplashViewModel>()
 
     override fun init() {
@@ -24,7 +27,11 @@ class IntroActivity : BaseActivity<ActivitySplashBinding>(R.layout.activity_spla
         appVersionObserver()
 //        splashViewModel.getVersion()
 
-        startActivityAndFinish(this, MainActivity::class.java)
+        lifecycleScope.launch{
+            delay(2500)
+            startActivityAndFinish(this@IntroActivity, MainActivity::class.java)
+        }
+
 
 
     }
